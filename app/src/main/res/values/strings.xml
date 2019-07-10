@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">About Lingxiao Zhu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Change background color</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_Notifications">Notifications</string>
+    <string name="title_websites">websites</string>
+    <string name="title_Contact">Contact</string>
+    <string name="menu_Basic">Basic info</string>
+    <string name="menu_education">Education</string>
+    <string name="menu_experience">Experience</string>
+    <string name="menu_projects">Projects</string>
+    <string name="menu_skills">Skills</string>
+    <string name="menu_communicate">Communicate</string>
+    <string name="menu_info">Info</string>
+    <string name="nav_header_name">Lingxiao Zhu</string>
+    <string name="nav_sub_intro">Software engineer and Data analyzer</string>
+</resources>
