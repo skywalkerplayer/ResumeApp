@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity
     {
         switch (item.getItemId()) {
             case R.id.navigation_home:
-                mTextMessage.setText("My name is Lingxiao Zhu, looking for a software engineering intern now and a full time job starts at 2020 Aug.\n\nProgramming is always the most interesting thing for me. The process of analyzing problem structure, sorting out logical solution and implementation are always exciting!\n\n" +
-                        "I have finished course of database and data analysis. I am taking courses of Introduction to algorithm and operating system. I have programmed 2 major projects for GUI solution of research and industrial problems, one in team, one by myself.\n\nFeel free to check any information in this app to know more about me. Know that this app is just a primitive version and will be updated later. If you want to contact me, use info provided in this app.");
+                mTextMessage.setText("My name is Lingxiao Zhu, looking for a full time software engineering job.\n\nSoftware engineering is always the most interesting thing for me. The process of analyzing problem structure, sorting out logical solution and implementation are always exciting!\n\n" +
+                        "I have worked for Amazon AWS for 1.5 years.\n\nFeel free to check any information in this app to know more about me. Know that this app is just a primitive version and will be updated later. If you want to contact me, use info provided in this app.");
                 return true;
             case R.id.navigation_websites:
                 SpannableString msp;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
                 mTextMessage.setText(msp);
                 return true;
             case R.id.navigation_Contact:
-                mTextMessage.setText("Phone:\n419-819-5424\n\nEmail:\nskywalker_2009@live.cn");
+                mTextMessage.setText("Phone:\n604-828-8569\n\nEmail:\nskywalker_2009@live.cn");
                 return true;
         }
         return false;
@@ -122,12 +122,12 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_basic) {
-            mTextMessage.setText("My name is Lingxiao Zhu, looking for a software engineering intern now and a full time job starts at 2020 Aug.\n\nProgramming is always the most interesting thing for me. The process of analyzing problem structure, sorting out logical solution and implementation are always exciting!\n\n" +
-                    "I have finished course of database and data analysis. I am taking courses of Introduction to algorithm and operating system. I have programmed 2 major projects for GUI solution of research and industrial problems, one in team, one by myself.\n\nFeel free to check any information in this app to know more about me. Know that this app is just a primitive version and will be updated later. If you want to contact me, use info provided in this app.\n\n\n\n\n");
+            mTextMessage.setText("My name is Lingxiao Zhu, looking for a full time software engineering job.\n\nSoftware engineering is always the most interesting thing for me. The process of analyzing problem structure, sorting out logical solution and implementation are always exciting!\n\n" +
+                    "I have worked for Amazon AWS for 1.5 years.\n\nFeel free to check any information in this app to know more about me. Know that this app is just a primitive version and will be updated later. If you want to contact me, use info provided in this app.\n\n\n\n\n");
         } else if (id == R.id.nav_education) {
             mTextMessage.setText("Education:\n\nMaster of Science Computer Science - Illinois Institute of Technology, Chicago, IL. Aug 2018-Aug 2020\n\n" +
-                    "· Current GPA: 3.67\n" +
-                    "· Taken courses of Introduction to Algorithms and Operating systems.\n\n" +
+                    "· GPA: 3.28\n" +
+                    "· Taken courses of Introduction to Algorithms, Operating systems, Machine learning and so on.\n\n" +
                     "Master of Science in Geology - Bowling Green State University, Bowling Green, OH. Aug 2015-Aug 2017\n\n" +
                     "· Taken courses of Quantitive methods and design, geodesy, GIS and spatial modeling.\n" +
                     "· Designed a whole Matlab project to analyze GPS and other auxiliary data, discovered a relationship between ground level and precipitation were detailed to show a 5-10mm of movement downward.\n" +
@@ -138,26 +138,41 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_experience) {
             mTextMessage.setText("Experience\n\n" +
+                    "·Software development engineer I in Amazon Dec 2020-Jun 2022\n" +
+                    "Working for AWS region build team. Constructed plugins for AWS region build automation project, helped with projects like a new region building, required services canary, RDS date displaying on console and so on.\n\n" +
                     "·Research assistant in Bowling Green State University Aug 2016-Jun 2018\n" +
                     "Designed a whole Matlab project to analyze GPS and other auxiliary data, discovered a relationship between ground level and precipitation were detailed to show a 5-10mm of movement downward.\n\n" +
-                    "· Data analyst in Qingdao Institution of Marine Geology June 2014-May 2015\n" +
+                    "·Data analyst in Qingdao Institution of Marine Geology June 2014-May 2015\n" +
                     "Used Jason to perform seismic-well log data inversion, combined up multiple datasets to analyze underground structure, located possible oil drills in the region alongside a team of 50 team members.\n\n");
 
         } else if (id == R.id.nav_projects) {
             mTextMessage.setText("Projects\n\n" +
-                    "Side-scan sonar imager Sep 2013-Jun 2014. A commercial project of data and image processing\n" +
-                    "· Advised on new technologies to help manual/auto item edge detection\n" +
-                    "· Cooperated with others to show twisted data correctly.\n\n" +
-                    "GPACE: Aug 2016-Jun2018. A researching project of GPS data analyzing and presentation.\n" +
-                    "· Displayed data from multiple datasets in both plot and map interface\n" +
-                    "· Able to perform any static and comparison researcher needs to do.\n" +
-                    "· Available on GitHub for anyone needs it.");
+                    "Hosted zone creation plugin for AWS Region building automation Dec 2020-Jun 2022.\n" +
+                    "Creates DNS resolving resources for new region\n" +
+                    "Fits into a larger automated region building service\n" +
+                    "Completed mainly individually with cooperation with team.\n\n"+
+
+                    "Guardrail detection application. A project that allows LIDAR detect guardrail real time. Spring 2019\n" +
+                    "Detect all points of guardrail gathered by LIDAR on street view cars.\n" +
+                    "Detect and show guardrail from existing 3D point cloud with C++.\n" +
+                    "Can be easily modified for real time guardrail detection on street.\n\n" +
+
+                    "GPACE. A researching project of GPS data analyzing and visualization. Aug 2016-Jun 2018\n" +
+                    "Displayed data from multiple datasets in both plot and map interface using Matlab\n" +
+                    "Able to perform any static and comparison researcher needs to do\n" +
+                    "Show a 5-10mm of movement downward related to precipitation\n" +
+                    "Publicized on GitHub for anyone needs.\n\n"+
+
+                    "Photo smear detection. A course project of image processing in CS513. Spring 2019\n" +
+                    "Developed new operator to detect left and right edge of smears with C++\n" +
+                    "Used mathematical morphology to clean up image\n" +
+                    "Fast enough for street view cars to run on road.\n\n");
 
         } else if(id==R.id.nav_skills){
-            mTextMessage.setText("C++, Python, Java, JavaScript, Matlab, SQL, Linux, Design GUI. Jason, ArcGIS");
+            mTextMessage.setText("Java, Python, Ruby, C++, Matlab, JavaScript, SQL, Android development, IOS development, Linux");
         }
         else if (id == R.id.nav_info) {
-            mTextMessage.setText("Phone:\n419-819-5424\n\nEmail:\nskywalker_2009@live.cn");
+            mTextMessage.setText("Phone:\n604-828-8569\n\nEmail:\nskywalker_2009@live.cn");
 
         } else if (id == R.id.nav_send) {
             mTextMessage.setText("This function will be online in future.");
